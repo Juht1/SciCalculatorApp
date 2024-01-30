@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace ViewModels
 {
-    internal class CalculatorPageViewModels
-    {
-    }
+        [INotifyPropertyChanged]
+
+        internal partial class CalculatorPageViewModel
+        {
+        [ObservableProperty]
+        private string InputText = string.Empty;
+        }
 }
